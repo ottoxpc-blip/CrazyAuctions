@@ -25,9 +25,8 @@ Settings:
     Macro-Dupe: true #Turn to false if you have an issue, but it should patch the bug.
   Sounds:
     Toggle: false #Disable the clicking sound.
-    Sound: 'UI_BUTTON_CLICK' #Make sure if you use 1.8 or lower you use the 1.8 sound and 1.9 and up use 1.9 sounds. The default sound is 1.8.
+    Sound: 'UI_BUTTON_CLICK'
   Sold-Item-Sound: 'UI_BUTTON_CLICK'
-    #Sounds are found here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
   GUISettings: #Settings for things in the gui.
     SellingItemLore: #The lore on items that are being sold.
       - '&7-------------------------'
@@ -125,11 +124,11 @@ Settings:
           - '&7items currently being sold.'
     OtherSettings: #Other Settings for the GUIs.
       SellingItems: #The button for your current items.
-        Item: 'DIAMOND' #The item that this button is.
-        Toggle: true #If the item is in the gui or not.
-        Slot: 46 #The slot it is in. I recommend not changing these. If you do make sure they are still in the bottom row.
-        Name: '&6Items You are Selling' #Name of the item.
-        Lore: #Lore of the item.
+        Item: 'DIAMOND'
+        Toggle: true
+        Slot: 46
+        Name: '&6Items You are Selling'
+        Lore:
           - '&aClick here to view all the items you'
           - '&aare currently selling on the auction.'
       Cancelled/ExpiredItems: #The button for Cancelled/Expired Items.
@@ -152,6 +151,13 @@ Settings:
         Slot: 50
         Name: '&6Refresh Page'
         Lore: { }
+      Sort: #Botão de ordenação
+        Item: 'HOPPER'
+        Toggle: true
+        Slot: 45
+        Name: '&6Ordenar: &aMais Recente'
+        Lore:
+          - '&7Clique para alternar ordenação.'
       NextPage: #The button for Next Page.
         Item: 'PAPER'
         Toggle: true
