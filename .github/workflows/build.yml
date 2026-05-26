@@ -23,8 +23,11 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
+      - name: List build files
+        run: ls -la paper/build/libs/
+
       - name: Upload JAR
         uses: actions/upload-artifact@v4
         with:
           name: CrazyAuctions
-          path: paper/build/libs/CrazyAuctions-*.jar
+          path: paper/build/libs/*.jar
